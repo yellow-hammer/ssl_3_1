@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="2ff2b7b4-492b-47a3-b0b2-ce22eb7fccd0">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord._ДемоЗаведующиеМестамиХранения" category="Record">
+				<xr:TypeId>97327570-21b6-498c-99b0-a5662b34f98f</xr:TypeId>
+				<xr:ValueId>21610cd3-af30-41e9-82b6-660bfeb2d417</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager._ДемоЗаведующиеМестамиХранения" category="Manager">
+				<xr:TypeId>c9c3ef49-9584-4148-bf6a-ad306dfe6060</xr:TypeId>
+				<xr:ValueId>f023645c-7e97-452a-ac56-00e36455ad07</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection._ДемоЗаведующиеМестамиХранения" category="Selection">
+				<xr:TypeId>4cc00cd8-1ac7-4db8-9626-b22923e72f42</xr:TypeId>
+				<xr:ValueId>63ff0551-953c-4367-ac28-a6dc5bcb5e4f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList._ДемоЗаведующиеМестамиХранения" category="List">
+				<xr:TypeId>9efd5734-f3fc-4010-a561-e972973aa276</xr:TypeId>
+				<xr:ValueId>3edacc70-d2d8-40c0-b71c-194f42d213e9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet._ДемоЗаведующиеМестамиХранения" category="RecordSet">
+				<xr:TypeId>e8740172-1722-43e4-ae57-6e85d6408300</xr:TypeId>
+				<xr:ValueId>0278ace0-db46-4141-9f5c-64c9e4869aaf</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey._ДемоЗаведующиеМестамиХранения" category="RecordKey">
+				<xr:TypeId>5d17af48-384f-4f2e-8b6f-2e147fc40b47</xr:TypeId>
+				<xr:ValueId>2c9de59e-787d-4112-ac1c-677b329ecd84</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager._ДемоЗаведующиеМестамиХранения" category="RecordManager">
+				<xr:TypeId>4c39ec07-30e2-421d-ab16-2f89d774de5e</xr:TypeId>
+				<xr:ValueId>95c84b5b-105f-4447-bd98-7b0bb7193cdd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>RecordSetModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>_ДемоЗаведующиеМестамиХранения</Name>
+			<Comment>Пример ограничений прав доступа к заимствованному регистру</Comment>
+			<InformationRegisterPeriodicity>Day</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Command uuid="27efb62f-a2ee-4135-a570-a54c39b40c2a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>_ДемоЗаведующиеМестамиХранения</Name>
+					<Comment/>
+					<Group>FormNavigationPanelGoTo</Group>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

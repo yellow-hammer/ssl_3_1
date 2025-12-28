@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AccumulationRegister uuid="974a67f8-0116-4266-bd86-e766250afd17">
+		<InternalInfo>
+			<xr:GeneratedType name="AccumulationRegisterRecord._ДемоОстаткиТоваровВМестахХранения" category="Record">
+				<xr:TypeId>0b22471c-7d0b-4e9b-a040-bacac2a958b9</xr:TypeId>
+				<xr:ValueId>c25891c8-cb64-409f-be42-222a4b3be314</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterManager._ДемоОстаткиТоваровВМестахХранения" category="Manager">
+				<xr:TypeId>b47c47f4-2614-46be-afd6-37ccfa54b15f</xr:TypeId>
+				<xr:ValueId>111495d9-1e3c-4af4-886f-0d28ede0a7a0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterSelection._ДемоОстаткиТоваровВМестахХранения" category="Selection">
+				<xr:TypeId>e2944400-7159-4c0e-8589-b8ff42898ed4</xr:TypeId>
+				<xr:ValueId>7f634eb5-b84f-47f9-86bd-b34e0b1d06e2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterList._ДемоОстаткиТоваровВМестахХранения" category="List">
+				<xr:TypeId>969969c4-e36c-43e6-9446-c70896a2a378</xr:TypeId>
+				<xr:ValueId>dcf30f0b-1b60-485a-91a3-0e3d55e01f9d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordSet._ДемоОстаткиТоваровВМестахХранения" category="RecordSet">
+				<xr:TypeId>196626d4-656e-4ff5-9110-a4f4b9574ec4</xr:TypeId>
+				<xr:ValueId>c9709cdb-6a36-4f3d-9e9f-006840924f72</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordKey._ДемоОстаткиТоваровВМестахХранения" category="RecordKey">
+				<xr:TypeId>6085a7c4-2d32-45ba-8129-dab148393f45</xr:TypeId>
+				<xr:ValueId>67d5ed6e-960f-4e24-8532-3ff7e301ad2a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>_ДемоОстаткиТоваровВМестахХранения</Name>
+			<Comment>Для отчета _ДемоОстаткиТоваровРасширение</Comment>
+			<RegisterType>Balance</RegisterType>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="a9860af7-6e70-4215-8ad2-c7438f0a399f">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Количество</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>716f68be-cf13-4b4b-a147-172f261cbdae</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="db712fa3-2c75-488f-9994-e9c9160eb05a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Номенклатура</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9481b2a5-5edf-4788-a31a-5aa66ab5830d</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef._ДемоНоменклатура</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="8a3c4c70-8f18-4d34-8d68-ddf64f853b50">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>МестоХранения</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>425d0d73-ad02-43bc-b111-31eaf8838aea</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef._ДемоМестаХранения</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="45bd7377-f0ea-4618-a8b5-9fc7002c77c8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Организация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>8605f896-c89a-4a4a-b3bc-5f071c4dda48</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef._ДемоОрганизации</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</AccumulationRegister>
+</MetaDataObject>

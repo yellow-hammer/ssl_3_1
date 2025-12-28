@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="387a7076-4ee9-4930-97f5-2abf10b241ea">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject._ДемоПоступлениеТоваров" category="Object">
+				<xr:TypeId>86c96d69-cabb-47e6-85cb-5526a9fbdeb2</xr:TypeId>
+				<xr:ValueId>32ff9719-bfb1-42db-b015-7b5007b121f8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef._ДемоПоступлениеТоваров" category="Ref">
+				<xr:TypeId>2a5b329a-514c-485e-b792-5827e5c01952</xr:TypeId>
+				<xr:ValueId>f9227b1f-3bf8-4356-8d3b-3bf1aa3d8258</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection._ДемоПоступлениеТоваров" category="Selection">
+				<xr:TypeId>4a6ef4b0-eaca-46ff-ba1a-ddf071d1a698</xr:TypeId>
+				<xr:ValueId>2ab3ceaa-2a2e-4e93-b270-eff387b42e3f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList._ДемоПоступлениеТоваров" category="List">
+				<xr:TypeId>e4bac213-d8c4-4301-86fb-d247920d4cd3</xr:TypeId>
+				<xr:ValueId>7b9631e7-f6af-484d-8159-8c6034f17f1a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager._ДемоПоступлениеТоваров" category="Manager">
+				<xr:TypeId>be509a53-230b-4576-b4fc-57ff8e99c3f3</xr:TypeId>
+				<xr:ValueId>01a4724b-50ec-474f-8af0-48f6159b0b9b</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>_ДемоПоступлениеТоваров</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>

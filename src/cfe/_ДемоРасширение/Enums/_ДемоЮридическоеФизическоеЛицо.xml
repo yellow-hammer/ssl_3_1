@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="054d8ebe-c66f-466e-be4e-5a86d795c89a">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef._ДемоЮридическоеФизическоеЛицо" category="Ref">
+				<xr:TypeId>a1848273-dd1c-4f10-af80-a787218d0588</xr:TypeId>
+				<xr:ValueId>be59e2c4-52f9-4193-87a6-ab30a4a3f2c9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager._ДемоЮридическоеФизическоеЛицо" category="Manager">
+				<xr:TypeId>f5a2c239-8845-42d5-822a-4b8460af092d</xr:TypeId>
+				<xr:ValueId>ea9a8c29-dbdb-4174-9e46-df43027df410</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList._ДемоЮридическоеФизическоеЛицо" category="List">
+				<xr:TypeId>538c6140-276e-4eda-9ae5-3febb8195b9c</xr:TypeId>
+				<xr:ValueId>5d856103-0541-416a-94f1-6d484dab29ad</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>_ДемоЮридическоеФизическоеЛицо</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="a27ab477-49a9-4d01-aa0e-b104d7b033e5">
+				<Properties>
+					<Name>_ДемоИндивидуальныйПредпринимательРасширение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Демо: Индивидуальный предприниматель (из расширения)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

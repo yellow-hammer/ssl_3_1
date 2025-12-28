@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="105">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="106"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>от</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Движения" id="97">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Движения</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ДвиженияРасширеннаяПодсказка" id="98"/>
+			<ChildItems>
+				<Page name="_ДемоРегистрНакопления" id="99">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Демо: Регистр накопления</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="_ДемоРегистрНакопленияРасширеннаяПодсказка" id="100"/>
+					<ChildItems>
+						<Table name="Движения_ДемоРегистрНакопленияРасширение" id="7">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.RegisterRecords._ДемоРегистрНакопленияРасширение</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Демо: Регистр накопления (движения)</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="Движения_ДемоРегистрНакопленияРасширениеКонтекстноеМеню" id="8"/>
+							<AutoCommandBar name="Движения_ДемоРегистрНакопленияРасширениеКоманднаяПанель" id="9"/>
+							<ExtendedTooltip name="Движения_ДемоРегистрНакопленияРасширениеРасширеннаяПодсказка" id="10"/>
+							<SearchStringAddition name="Движения_ДемоРегистрНакопленияРасширениеСтрокаПоиска" id="11">
+								<AdditionSource>
+									<Item>Движения_ДемоРегистрНакопленияРасширение</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="Движения_ДемоРегистрНакопленияРасширениеСтрокаПоискаКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="Движения_ДемоРегистрНакопленияРасширениеСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="Движения_ДемоРегистрНакопленияРасширениеСостояниеПросмотра" id="14">
+								<AdditionSource>
+									<Item>Движения_ДемоРегистрНакопленияРасширение</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="Движения_ДемоРегистрНакопленияРасширениеСостояниеПросмотраКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="Движения_ДемоРегистрНакопленияРасширениеСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="Движения_ДемоРегистрНакопленияРасширениеУправлениеПоиском" id="17">
+								<AdditionSource>
+									<Item>Движения_ДемоРегистрНакопленияРасширение</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="Движения_ДемоРегистрНакопленияРасширениеУправлениеПоискомКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="Движения_ДемоРегистрНакопленияРасширениеУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="Движения_ДемоРегистрНакопленияРасширениеНомерСтроки" id="20">
+									<DataPath>Объект.RegisterRecords._ДемоРегистрНакопленияРасширение.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Движения_ДемоРегистрНакопленияРасширениеНомерСтрокиКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="Движения_ДемоРегистрНакопленияРасширениеНомерСтрокиРасширеннаяПодсказка" id="22"/>
+								</LabelField>
+								<InputField name="Движения_ДемоРегистрНакопленияРасширениеВидДвижения" id="26">
+									<DataPath>Объект.RegisterRecords._ДемоРегистрНакопленияРасширение.RecordType</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Движения_ДемоРегистрНакопленияРасширениеВидДвиженияКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="Движения_ДемоРегистрНакопленияРасширениеВидДвиженияРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<InputField name="Движения_ДемоРегистрНакопленияРасширениеНоменклатура" id="29">
+									<DataPath>Объект.RegisterRecords._ДемоРегистрНакопленияРасширение.Номенклатура</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Движения_ДемоРегистрНакопленияРасширениеНоменклатураКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="Движения_ДемоРегистрНакопленияРасширениеНоменклатураРасширеннаяПодсказка" id="31"/>
+								</InputField>
+								<InputField name="Движения_ДемоРегистрНакопленияРасширениеСумма" id="32">
+									<DataPath>Объект.RegisterRecords._ДемоРегистрНакопленияРасширение.Сумма</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Движения_ДемоРегистрНакопленияРасширениеСуммаКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="Движения_ДемоРегистрНакопленияРасширениеСуммаРасширеннаяПодсказка" id="34"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="_ДемоРегистрБухгалтерии" id="101">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Демо: Регистр бухгалтерии</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="_ДемоРегистрБухгалтерииРасширеннаяПодсказка" id="102"/>
+					<ChildItems>
+						<Table name="Движения_ДемоРегистрБухгалтерииРасширение" id="107">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.RegisterRecords._ДемоРегистрБухгалтерииРасширение</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Демо: Регистр бухгалтерии (движения)</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="Движения_ДемоРегистрБухгалтерииРасширениеКонтекстноеМеню" id="108"/>
+							<AutoCommandBar name="Движения_ДемоРегистрБухгалтерииРасширениеКоманднаяПанель" id="109"/>
+							<ExtendedTooltip name="Движения_ДемоРегистрБухгалтерииРасширениеРасширеннаяПодсказка" id="110"/>
+							<SearchStringAddition name="Движения_ДемоРегистрБухгалтерииРасширениеСтрокаПоиска" id="111">
+								<AdditionSource>
+									<Item>Движения_ДемоРегистрБухгалтерииРасширение</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="Движения_ДемоРегистрБухгалтерииРасширениеСтрокаПоискаКонтекстноеМеню" id="112"/>
+								<ExtendedTooltip name="Движения_ДемоРегистрБухгалтерииРасширениеСтрокаПоискаРасширеннаяПодсказка" id="113"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="Движения_ДемоРегистрБухгалтерииРасширениеСостояниеПросмотра" id="114">
+								<AdditionSource>
+									<Item>Движения_ДемоРегистрБухгалтерииРасширение</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="Движения_ДемоРегистрБухгалтерииРасширениеСостояниеПросмотраКонтекстноеМеню" id="115"/>
+								<ExtendedTooltip name="Движения_ДемоРегистрБухгалтерииРасширениеСостояниеПросмотраРасширеннаяПодсказка" id="116"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="Движения_ДемоРегистрБухгалтерииРасширениеУправлениеПоиском" id="117">
+								<AdditionSource>
+									<Item>Движения_ДемоРегистрБухгалтерииРасширение</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="Движения_ДемоРегистрБухгалтерииРасширениеУправлениеПоискомКонтекстноеМеню" id="118"/>
+								<ExtendedTooltip name="Движения_ДемоРегистрБухгалтерииРасширениеУправлениеПоискомРасширеннаяПодсказка" id="119"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="Движения_ДемоРегистрБухгалтерииРасширениеНомерСтроки" id="120">
+									<DataPath>Объект.RegisterRecords._ДемоРегистрБухгалтерииРасширение.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Движения_ДемоРегистрБухгалтерииРасширениеНомерСтрокиКонтекстноеМеню" id="121"/>
+									<ExtendedTooltip name="Движения_ДемоРегистрБухгалтерииРасширениеНомерСтрокиРасширеннаяПодсказка" id="122"/>
+								</LabelField>
+								<InputField name="Движения_ДемоРегистрБухгалтерииРасширениеНоменклатура" id="126">
+									<DataPath>Объект.RegisterRecords._ДемоРегистрБухгалтерииРасширение.Номенклатура</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Движения_ДемоРегистрБухгалтерииРасширениеНоменклатураКонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="Движения_ДемоРегистрБухгалтерииРасширениеНоменклатураРасширеннаяПодсказка" id="128"/>
+								</InputField>
+								<InputField name="Движения_ДемоРегистрБухгалтерииРасширениеСчетДт" id="129">
+									<DataPath>Объект.RegisterRecords._ДемоРегистрБухгалтерииРасширение.AccountDr</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Движения_ДемоРегистрБухгалтерииРасширениеСчетДтКонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="Движения_ДемоРегистрБухгалтерииРасширениеСчетДтРасширеннаяПодсказка" id="131"/>
+								</InputField>
+								<InputField name="Движения_ДемоРегистрБухгалтерииРасширениеСчетКт" id="132">
+									<DataPath>Объект.RegisterRecords._ДемоРегистрБухгалтерииРасширение.AccountCr</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Движения_ДемоРегистрБухгалтерииРасширениеСчетКтКонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="Движения_ДемоРегистрБухгалтерииРасширениеСчетКтРасширеннаяПодсказка" id="134"/>
+								</InputField>
+								<InputField name="Движения_ДемоРегистрБухгалтерииРасширениеСумма" id="135">
+									<DataPath>Объект.RegisterRecords._ДемоРегистрБухгалтерииРасширение.Сумма</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Движения_ДемоРегистрБухгалтерииРасширениеСуммаКонтекстноеМеню" id="136"/>
+									<ExtendedTooltip name="Движения_ДемоРегистрБухгалтерииРасширениеСуммаРасширеннаяПодсказка" id="137"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="_ДемоРегистрРасчета" id="103">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Демо: Регистр расчета</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="_ДемоРегистрРасчетаРасширеннаяПодсказка" id="104"/>
+					<ChildItems>
+						<Table name="Движения_ДемоРегистрРасчетаРасширение" id="35">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.RegisterRecords._ДемоРегистрРасчетаРасширение</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Демо: Регистр расчета (движения)</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="Движения_ДемоРегистрРасчетаРасширениеКонтекстноеМеню" id="36"/>
+							<AutoCommandBar name="Движения_ДемоРегистрРасчетаРасширениеКоманднаяПанель" id="37"/>
+							<ExtendedTooltip name="Движения_ДемоРегистрРасчетаРасширениеРасширеннаяПодсказка" id="38"/>
+							<SearchStringAddition name="Движения_ДемоРегистрРасчетаРасширениеСтрокаПоиска" id="39">
+								<AdditionSource>
+									<Item>Движения_ДемоРегистрРасчетаРасширение</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="Движения_ДемоРегистрРасчетаРасширениеСтрокаПоискаКонтекстноеМеню" id="40"/>
+								<ExtendedTooltip name="Движения_ДемоРегистрРасчетаРасширениеСтрокаПоискаРасширеннаяПодсказка" id="41"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="Движения_ДемоРегистрРасчетаРасширениеСостояниеПросмотра" id="42">
+								<AdditionSource>
+									<Item>Движения_ДемоРегистрРасчетаРасширение</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="Движения_ДемоРегистрРасчетаРасширениеСостояниеПросмотраКонтекстноеМеню" id="43"/>
+								<ExtendedTooltip name="Движения_ДемоРегистрРасчетаРасширениеСостояниеПросмотраРасширеннаяПодсказка" id="44"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="Движения_ДемоРегистрРасчетаРасширениеУправлениеПоиском" id="45">
+								<AdditionSource>
+									<Item>Движения_ДемоРегистрРасчетаРасширение</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="Движения_ДемоРегистрРасчетаРасширениеУправлениеПоискомКонтекстноеМеню" id="46"/>
+								<ExtendedTooltip name="Движения_ДемоРегистрРасчетаРасширениеУправлениеПоискомРасширеннаяПодсказка" id="47"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="Движения_ДемоРегистрРасчетаРасширениеНомерСтроки" id="48">
+									<DataPath>Объект.RegisterRecords._ДемоРегистрРасчетаРасширение.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Движения_ДемоРегистрРасчетаРасширениеНомерСтрокиКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="Движения_ДемоРегистрРасчетаРасширениеНомерСтрокиРасширеннаяПодсказка" id="50"/>
+								</LabelField>
+								<InputField name="Движения_ДемоРегистрРасчетаРасширениеВидРасчета" id="57">
+									<DataPath>Объект.RegisterRecords._ДемоРегистрРасчетаРасширение.CalculationType</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Движения_ДемоРегистрРасчетаРасширениеВидРасчетаКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="Движения_ДемоРегистрРасчетаРасширениеВидРасчетаРасширеннаяПодсказка" id="59"/>
+								</InputField>
+								<InputField name="Движения_ДемоРегистрРасчетаРасширениеНоменклатура" id="60">
+									<DataPath>Объект.RegisterRecords._ДемоРегистрРасчетаРасширение.Номенклатура</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Движения_ДемоРегистрРасчетаРасширениеНоменклатураКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="Движения_ДемоРегистрРасчетаРасширениеНоменклатураРасширеннаяПодсказка" id="62"/>
+								</InputField>
+								<InputField name="Движения_ДемоРегистрРасчетаРасширениеАмортизация" id="63">
+									<DataPath>Объект.RegisterRecords._ДемоРегистрРасчетаРасширение.Амортизация</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Движения_ДемоРегистрРасчетаРасширениеАмортизацияКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="Движения_ДемоРегистрРасчетаРасширениеАмортизацияРасширеннаяПодсказка" id="65"/>
+								</InputField>
+								<CheckBoxField name="Движения_ДемоРегистрРасчетаРасширениеСторно" id="141">
+									<DataPath>Объект.RegisterRecords._ДемоРегистрРасчетаРасширение.ReversingEntry</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="Движения_ДемоРегистрРасчетаРасширениеСторноКонтекстноеМеню" id="142"/>
+									<ExtendedTooltip name="Движения_ДемоРегистрРасчетаРасширениеСторноРасширеннаяПодсказка" id="143"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="Комментарий" id="138">
+			<DataPath>Объект.Комментарий</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="139"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="140"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject._ДемоОперация</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="32550e24-8185-4c82-b42c-49d55e25bc3c">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject._ДемоКонтрагенты" category="Object">
+				<xr:TypeId>eeca8820-a5f9-4ad5-9160-25ad76f69e47</xr:TypeId>
+				<xr:ValueId>53b74d90-94be-4cea-b5ea-6b6aeb23a297</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef._ДемоКонтрагенты" category="Ref">
+				<xr:TypeId>ff870ae2-7ee3-4a22-8406-59b4c8bfa1e2</xr:TypeId>
+				<xr:ValueId>e83f1da5-6433-4ed5-82cb-ad1d12cebae3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection._ДемоКонтрагенты" category="Selection">
+				<xr:TypeId>8dcbc197-323a-48b5-a4f4-61407f99b592</xr:TypeId>
+				<xr:ValueId>2e221a37-d35b-4a5b-b98d-0547f93e2b6e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList._ДемоКонтрагенты" category="List">
+				<xr:TypeId>ca4a00de-0f75-47e8-8123-d2dc97492523</xr:TypeId>
+				<xr:ValueId>303bf66b-9148-42d4-a624-c43430c5d641</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager._ДемоКонтрагенты" category="Manager">
+				<xr:TypeId>08e80ebd-3bf1-4e28-a888-47f37c56f51e</xr:TypeId>
+				<xr:ValueId>0914d720-3bf7-4f0c-9c9e-d683cf4b3a50</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>_ДемоКонтрагенты</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

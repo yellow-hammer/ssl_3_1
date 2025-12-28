@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WSReference uuid="2776de8e-594b-4870-aa4d-92651fd79d9a">
+		<InternalInfo>
+			<xr:GeneratedType name="WSReferenceManager.mcommunicator" category="Manager">
+				<xr:TypeId>1d6ac970-94cc-4e8d-ae11-ae0ed4ae2319</xr:TypeId>
+				<xr:ValueId>8195dfde-887d-46a2-b8ff-453a2f16294d</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>mcommunicator</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>mcommunicator</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Демо: Сервис отправки SMS от MTS</Comment>
+			<LocationURL>https://www.mcommunicator.ru/m2m/m2m_api.asmx?WSDL</LocationURL>
+		</Properties>
+	</WSReference>
+</MetaDataObject>

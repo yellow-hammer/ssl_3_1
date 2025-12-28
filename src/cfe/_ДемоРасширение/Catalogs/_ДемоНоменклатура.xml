@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="2cb40f25-2c61-41e9-9689-e1e4c639e8cb">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject._ДемоНоменклатура" category="Object">
+				<xr:TypeId>7a74f887-c265-4ce1-ada8-b56fabdb05fe</xr:TypeId>
+				<xr:ValueId>29e62182-abc4-4845-805d-03ad1647480f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef._ДемоНоменклатура" category="Ref">
+				<xr:TypeId>5aa1e03d-4e6c-466a-b4d0-e7acaa599773</xr:TypeId>
+				<xr:ValueId>f7e76c5c-892b-4146-972e-8231cdd9763c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection._ДемоНоменклатура" category="Selection">
+				<xr:TypeId>4ce96904-f6ed-4013-87cd-0812e1f3039d</xr:TypeId>
+				<xr:ValueId>d8cd3176-ffa8-44fc-bfa3-199cf0fe601a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList._ДемоНоменклатура" category="List">
+				<xr:TypeId>682fce82-8ae4-40fd-ae4a-6f94153d51a3</xr:TypeId>
+				<xr:ValueId>c11c79d0-91fd-406c-9181-fd0312afea8f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager._ДемоНоменклатура" category="Manager">
+				<xr:TypeId>65794464-6b20-4d78-a4fd-95a6ffb71d82</xr:TypeId>
+				<xr:ValueId>ae6354c9-26f0-4c76-accc-b5d2e35de2df</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>_ДемоНоменклатура</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="2963fe96-d784-43d1-b916-e6e7a4bed9fc">
+				<Properties>
+					<Name>_ДемоКлючСинхронизации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Демо: Ключ синхронизации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Для плана обмена с системой установки цен (из расширения)</Comment>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:type="xs:string"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>
