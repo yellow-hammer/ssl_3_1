@@ -1,0 +1,2 @@
+C:\Users\ikarl\git\github.com\_yellow-hammer\ssl_3_1\src\cf\Catalogs\Файлы.xml
+C:\Users\ikarl\git\github.com\_yellow-hammer\ssl_3_1\src\cf\Catalogs\ШаблоныАнкет.xml
