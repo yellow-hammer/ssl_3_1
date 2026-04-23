@@ -1,0 +1,24 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Отладка 1С (запуск)",
+            "type": "1c-platform-tools",
+            "request": "launch",
+            "platformPath": "${env:PROGRAMFILES}/1cv8",
+            "rootProject": "${workspaceFolder}/src/cf",
+            "debugServerHost": "localhost",
+            "autoAttachTypes": [
+                "ManagedClient",
+                "Server"
+            ],
+            "extensions": [
+                "${workspaceFolder}/src/cfe/_ДемоПустоеРасширение",
+                "${workspaceFolder}/src/cfe/_ДемоРасширение"
+            ]
+        }
+    ]
+}
