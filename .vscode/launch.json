@@ -18,6 +18,14 @@
             "extensions": [
                 "${workspaceFolder}/src/cfe/_ДемоПустоеРасширение",
                 "${workspaceFolder}/src/cfe/_ДемоРасширение"
+            ],
+            "externalFilesSrc":    [
+                "${workspaceFolder}/src/epf", 
+                "${workspaceFolder}/src/erf"
+            ],
+            "externalFilesBuilds": [
+                "${workspaceFolder}/build/out/epf", 
+                "${workspaceFolder}/build/out/erf"
             ]
         }
     ]

@@ -1,14 +1,20 @@
+# Окружение
 .env
+
+# Результаты сборки и отчёты
 build/
+out/
 allure-report/
+.scannerwork/
+
+# Зависимости OneScript
 oscript_modules/
 
-ConfigDumpInfo.xml
-build
-out
-.scannerwork
-src\cf\ConfigDumpInfo.xml
+# Локальный env-профиль запуска (не коммитится)
+env.local.json
 
-# Файлы отслеживания загрузки конфигурации
+# Служебные файлы выгрузки конфигурации
+ConfigDumpInfo.xml
+src/cf/ConfigDumpInfo.xml
 src/cf/lastUploadedCommit.txt
 src/cf/lastUploadedConfigDumpInfo.xml

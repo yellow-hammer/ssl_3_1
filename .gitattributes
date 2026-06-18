@@ -25,7 +25,7 @@ Form.bin binary
 *.jpg binary
 *.jpeg binary
 
-# Archives
+# Архивы
 *.7z binary
 *.gz binary
 *.tar binary
