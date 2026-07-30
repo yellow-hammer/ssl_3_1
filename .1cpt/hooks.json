@@ -1,0 +1,17 @@
+{
+    "$schema": "https://raw.githubusercontent.com/yellow-hammer/vscode-1c-platform-tools/main/resources/schemas/hooks.schema.json",
+    "version": 1,
+    "hooks": {
+        "*": {
+            "pre": "echo ХУК ДЛЯ ВСЕХ: команда начинается"
+        },
+        "1c-platform-tools.run.designer": {
+            "pre": [
+                "echo ХУК КОНФИГУРАТОРА: шаг 1",
+                "echo ХУК КОНФИГУРАТОРА: шаг 2"
+            ],
+            "post": "echo ХУК КОНФИГУРАТОРА: команда завершилась",
+            "onError": "echo ХУК КОНФИГУРАТОРА: команда упала"
+        }
+    }
+}

@@ -1,0 +1,302 @@
+{
+    "$schema": "https://raw.githubusercontent.com/yellow-hammer/vscode-1c-platform-tools/main/resources/schemas/pipelines.schema.json",
+    "version": 2,
+    "pipelines": [
+        {
+            "id": "check-1-ok",
+            "name": "1. Простая цепочка",
+            "nodes": [
+                {
+                    "id": "a",
+                    "type": "shell",
+                    "name": "Шаг 1",
+                    "script": "echo Шаг 1",
+                    "x": 60,
+                    "y": 50
+                },
+                {
+                    "id": "b",
+                    "type": "shell",
+                    "name": "Шаг 2",
+                    "script": "echo Шаг 2",
+                    "x": 348,
+                    "y": 50
+                },
+                {
+                    "id": "c",
+                    "type": "shell",
+                    "name": "Шаг 3",
+                    "script": "echo Шаг 3",
+                    "x": 636,
+                    "y": 50
+                }
+            ],
+            "edges": [
+                {
+                    "from": "a",
+                    "to": "b"
+                },
+                {
+                    "from": "b",
+                    "to": "c"
+                }
+            ],
+            "description": "Три шага подряд, все успешные. Проверяет базовый прогон и подсветку блоков."
+        },
+        {
+            "id": "check-2-stop",
+            "name": "2. Остановка на ошибке",
+            "nodes": [
+                {
+                    "id": "a",
+                    "type": "shell",
+                    "name": "Шаг 1",
+                    "script": "echo Начали",
+                    "x": 60,
+                    "y": 120
+                },
+                {
+                    "id": "b",
+                    "type": "shell",
+                    "name": "Падение",
+                    "script": "exit 1",
+                    "x": 340,
+                    "y": 120
+                },
+                {
+                    "id": "c",
+                    "type": "shell",
+                    "name": "Не должен выполниться",
+                    "script": "echo ОШИБКА ТЕСТА",
+                    "x": 620,
+                    "y": 120
+                }
+            ],
+            "edges": [
+                {
+                    "from": "a",
+                    "to": "b"
+                },
+                {
+                    "from": "b",
+                    "to": "c"
+                }
+            ],
+            "description": "Второй шаг падает, третий не выполняется. Проверяет обрыв ветки и отчёт."
+        },
+        {
+            "id": "check-3-branch",
+            "name": "3. Ветка ошибки",
+            "nodes": [
+                {
+                    "id": "a",
+                    "type": "shell",
+                    "name": "Падение",
+                    "script": "exit 1",
+                    "x": 60,
+                    "y": 180
+                },
+                {
+                    "id": "ok",
+                    "type": "shell",
+                    "name": "Ветка успеха",
+                    "script": "echo ОШИБКА ТЕСТА",
+                    "x": 340,
+                    "y": 60
+                },
+                {
+                    "id": "err",
+                    "type": "shell",
+                    "name": "Ветка ошибки",
+                    "script": "echo Поймали ошибку",
+                    "x": 340,
+                    "y": 300
+                }
+            ],
+            "edges": [
+                {
+                    "from": "a",
+                    "to": "ok"
+                },
+                {
+                    "from": "a",
+                    "to": "err",
+                    "on": "error"
+                }
+            ],
+            "description": "У падающего шага есть ветка на ошибку: цепочка продолжается по ней. Проверяет ветвление."
+        },
+        {
+            "id": "check-4-confirm",
+            "name": "4. Пауза с подтверждением",
+            "nodes": [
+                {
+                    "id": "ask",
+                    "type": "confirm",
+                    "name": "Вопрос",
+                    "message": "Продолжить проверку?",
+                    "x": 60,
+                    "y": 180
+                },
+                {
+                    "id": "yes",
+                    "type": "shell",
+                    "name": "Согласились",
+                    "script": "echo Нажали Продолжить",
+                    "x": 340,
+                    "y": 80
+                },
+                {
+                    "id": "no",
+                    "type": "shell",
+                    "name": "Отказались",
+                    "script": "echo Нажали Отмена",
+                    "x": 340,
+                    "y": 300
+                }
+            ],
+            "edges": [
+                {
+                    "from": "ask",
+                    "to": "yes"
+                },
+                {
+                    "from": "ask",
+                    "to": "no",
+                    "on": "error"
+                }
+            ],
+            "description": "Спрашивает и идёт по разным веткам. Проверяет паузу и ветку отказа."
+        },
+        {
+            "id": "check-5-command",
+            "name": "5. Команда 1С и хуки",
+            "nodes": [
+                {
+                    "id": "before",
+                    "type": "shell",
+                    "name": "До команды",
+                    "script": "echo Запускаю Конфигуратор",
+                    "x": 60,
+                    "y": 120
+                },
+                {
+                    "id": "designer",
+                    "type": "command",
+                    "name": "Запустить Конфигуратор",
+                    "command": "1c-platform-tools.run.designer",
+                    "x": 340,
+                    "y": 120
+                }
+            ],
+            "edges": [
+                {
+                    "from": "before",
+                    "to": "designer"
+                }
+            ],
+            "description": "Запускает Конфигуратор командой расширения: видно, что вокруг неё срабатывают хуки из hooks.json."
+        },
+        {
+            "id": "deploy-from-scratch",
+            "name": "6. Развернуть базу с нуля",
+            "nodes": [
+                {
+                    "id": "ask",
+                    "type": "confirm",
+                    "name": "Подтверждение",
+                    "message": "Информационная база будет создана заново, данные потеряются. Продолжить?",
+                    "x": 60,
+                    "y": 50
+                },
+                {
+                    "id": "create",
+                    "type": "command",
+                    "name": "Создать пустую ИБ",
+                    "command": "1c-platform-tools.infobase.createEmpty",
+                    "x": 348,
+                    "y": 50
+                },
+                {
+                    "id": "loadCf",
+                    "type": "command",
+                    "name": "Загрузить конфигурацию из src/cf",
+                    "command": "1c-platform-tools.configuration.loadFromSrc",
+                    "x": 636,
+                    "y": 50
+                },
+                {
+                    "id": "loadCfe",
+                    "type": "command",
+                    "name": "Загрузить расширения из src/cfe",
+                    "command": "1c-platform-tools.extensions.loadFromSrc",
+                    "x": 924,
+                    "y": 50
+                },
+                {
+                    "id": "designer",
+                    "type": "command",
+                    "name": "Запустить Конфигуратор",
+                    "command": "1c-platform-tools.run.designer",
+                    "x": 1212,
+                    "y": 50
+                },
+                {
+                    "id": "cancelled",
+                    "type": "shell",
+                    "name": "Отменено",
+                    "script": "echo Развёртывание отменено",
+                    "x": 348,
+                    "y": 180
+                },
+                {
+                    "id": "failed",
+                    "type": "shell",
+                    "name": "Не удалось",
+                    "script": "echo Развёртывание прервано, подробности в журнале расширения",
+                    "x": 1212,
+                    "y": 180
+                }
+            ],
+            "edges": [
+                {
+                    "from": "ask",
+                    "to": "create"
+                },
+                {
+                    "from": "ask",
+                    "to": "cancelled",
+                    "on": "error"
+                },
+                {
+                    "from": "create",
+                    "to": "loadCf"
+                },
+                {
+                    "from": "loadCf",
+                    "to": "loadCfe"
+                },
+                {
+                    "from": "loadCfe",
+                    "to": "designer"
+                },
+                {
+                    "from": "create",
+                    "to": "failed",
+                    "on": "error"
+                },
+                {
+                    "from": "loadCf",
+                    "to": "failed",
+                    "on": "error"
+                },
+                {
+                    "from": "loadCfe",
+                    "to": "failed",
+                    "on": "error"
+                }
+            ],
+            "description": "Пустая ИБ, конфигурация из src/cf, все расширения из src/cfe, затем Конфигуратор. Первый шаг спрашивает подтверждение: база создаётся заново."
+        }
+    ]
+}
